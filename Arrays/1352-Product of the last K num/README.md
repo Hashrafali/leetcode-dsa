@@ -1,10 +1,9 @@
-# LeetCode 1971 - Find if Path Exists in Graph
+# LeetCode 1352 - Product of the Last K Numbers
 
 ## Approach
-Use graph traversal to visit connected nodes.
-Start from the source and continue through its neighbors.
-If the destination is reached, a path exists.
+Use a prefix product array to efficiently calculate the product of the last k numbers.
+When a zero appears, reset the prefix products.
 
 ## Complexity
-Time: O(V + E)  
-Space: O(V + E)
+Time: O(1) for add and getProduct
+Space: O(n)
